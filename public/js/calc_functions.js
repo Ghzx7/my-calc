@@ -30,3 +30,13 @@ function manipularTeclado(){
     if(/[0-9]/.test(event.key))
         atualizarDisplay({value: event.key});
 }
+function expo(){
+    const display = document.getElementById('display');
+    const valor2 = parseInt(display.value);
+    valor1 = Math.pow(valor1, valor2);
+    display.value = valor1;
+    operador = '';
+
+    
+}
+
